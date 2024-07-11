@@ -4,12 +4,12 @@ import TakeNote from "./TakeNote";
 import Notes from "./Notes";
 import Footer from "./Footer";
 
-const App = () => {
+  const App = () => {
   const [notes, setNotes] = useState([]);
 
-  const addNote = (newNote) => {
+  const addNote = (details) => {
     setNotes((prevNotes) => {
-      return [...prevNotes, newNote];
+      return [...prevNotes, details];
     });
   };
 
