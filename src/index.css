@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+HU:wght@100&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +17,13 @@
   box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
+.headerh1{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 280;
+  font-style: normal;
+}
+
 .main_note {
   width: 400px;
   height: 160px;
@@ -22,14 +31,12 @@
   margin: 20px auto;
   border-radius: 15px;
   box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.main_note h1 {
-  color: #34495e;
-}
-
-.main_note p {
-  color: grey;
+.main_note:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 8px 15px -5px rgba(0, 0, 0, 0.4);
 }
 
 .form {
@@ -59,6 +66,7 @@ textarea {
   outline: none;
   font-size: 1rem;
   margin: 10px 0;
+  resize: none;
 }
 
 .MuiButton-root {
@@ -75,9 +83,9 @@ textarea {
   background-color: #f5ba13 !important;
 }
 
-
 .note {
   background: #fff;
+  color: rgb(66, 66, 66);
   border-radius: 7px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -87,6 +95,13 @@ textarea {
   float: left;
   overflow-y: auto;
   overflow-x: hidden;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.note:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px  rgb(139, 138, 138, 0.4);
 }
 
 .note h1 {
@@ -130,12 +145,13 @@ footer {
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  background-color: #f5ba13;
-  color: white;
+  /* background-color: #f5ba13; */
+  color: rgb(82, 82, 82);
 }
 
 .main_div{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100vh;
 }
