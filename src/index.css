@@ -107,6 +107,7 @@ textarea {
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 10px;
+  text-transform:capitalize;
 }
 
 .note p {
@@ -114,6 +115,10 @@ textarea {
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.note p::first-letter {
+  text-transform: uppercase;
 }
 
 .note .btn {
